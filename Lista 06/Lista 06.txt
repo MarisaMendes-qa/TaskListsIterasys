@@ -1,0 +1,2 @@
+Lista 6 - Cobasi
+Crie um script de consulta de produto no site da Cobasi organizado com Cucumber, Steps e Hooks
