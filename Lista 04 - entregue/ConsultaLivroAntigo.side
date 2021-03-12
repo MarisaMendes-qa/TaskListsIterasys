@@ -1,0 +1,129 @@
+{
+  "id": "40bc1289-e3b6-4a5e-9810-1875a4c1d86c",
+  "version": "2.0",
+  "name": "ConsultaLivroAntigo",
+  "url": "https://www.alibris.com",
+  "tests": [{
+    "id": "5402be5f-f633-49d2-a147-8c4e3daccf36",
+    "name": "ConsultaLivroAntigo",
+    "commands": [{
+      "id": "42162088-1410-4c01-a75f-b4b24ee42fa2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ccacc2e-87cc-45c6-a2ed-4c9f5abd56e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1346x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38ae4190-8450-4c95-bed4-4157940fd079",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=keyword", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//div[@id='alibris-header-red']/div[2]/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "242447e6-9594-4a18-a4d1-8729d79c4427",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=keyword", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//div[@id='alibris-header-red']/div[2]/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "The art of software testing"
+    }, {
+      "id": "cfd0949f-e8b5-4361-a32c-665e7980c0f2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=keyword", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//div[@id='alibris-header-red']/div[2]/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0bba33a0-9829-4229-8ffe-7fa790e847ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Art of Software Testing",
+      "targets": [
+        ["linkText=The Art of Software Testing", "linkText"],
+        ["css=li:nth-child(1) .work h2 a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Art of Software Testing')]", "xpath:link"],
+        ["xpath=//ul[@id='works']/li/div/div/div/div[2]/h2/strong/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/The-Art-of-Software-Testing-Glenford-J-Myers/book/432659?matches=41')])[2]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Art of Software Testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3509643-5629-4aaf-94eb-bfb61659f330",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slick-slide:nth-child(3) .cvr",
+      "targets": [
+        ["css=.slick-slide:nth-child(3) .cvr", "css:finder"],
+        ["xpath=(//img[@alt='The Art of Software Testing'])[13]", "xpath:img"],
+        ["xpath=//div[@id='product-carousels']/div/div/div/div/div/div[3]/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb25555-fe47-4b96-aed1-577d61e29c24",
+      "comment": "",
+      "command": "click",
+      "target": "id=tabUsed",
+      "targets": [
+        ["id=tabUsed", "id"],
+        ["css=#tabUsed", "css:finder"],
+        ["xpath=//a[@id='tabUsed']", "xpath:attributes"],
+        ["xpath=//li[@id='listUsed']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#\\\\')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12b2d5ae-7a1b-4798-bdbe-27a6ee7f0c28",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-container:nth-child(1) .price > p",
+      "targets": [
+        ["css=.product-container:nth-child(1) .price > p", "css:finder"],
+        ["xpath=//div[@id='all-carousel']/div/div/div[3]/ul/li/table/tbody/tr/td[3]/p", "xpath:idRelative"],
+        ["xpath=//td[3]/p", "xpath:position"]
+      ],
+      "value": "$1.45 $160.00"
+    }]
+  }],
+  "suites": [{
+    "id": "215aff0e-09cb-4944-aaba-fc9bc75d0ab3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5402be5f-f633-49d2-a147-8c4e3daccf36"]
+  }],
+  "urls": ["https://www.alibris.com/"],
+  "plugins": []
+}

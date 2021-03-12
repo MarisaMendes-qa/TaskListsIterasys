@@ -1,0 +1,136 @@
+{
+  "id": "2fc4a320-f806-4609-85cf-1ab5bdea17e6",
+  "version": "2.0",
+  "name": "Tasklist-04",
+  "url": "https://www.alibris.com",
+  "tests": [{
+    "id": "e82e935c-ae7f-42fa-8a29-255d9f3cb26e",
+    "name": "VerificarLivro-Alibris",
+    "commands": [{
+      "id": "4f1a685d-1fec-4d4b-a086-893f3552bae2",
+      "comment": "",
+      "command": "open",
+      "target": "/How-to-be-a-Gentlewoman-The-Art-of-Soft-Power-in-Hard-Times-Lotte-Jeffs/book/43383618?matches=19",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "309c7b0a-7da0-42e1-9a7b-ed0e9221054d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1346x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7f0c4c0-8e92-44b3-9cdb-bf2c5cedbd8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='alibris logo']", "xpath:img"],
+        ["xpath=//div[@id='alibris-header-red']/a[2]/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84b8ad91-0ae2-4098-9092-7b105c2dcf65",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=keyword", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//div[@id='alibris-header-red']/div[2]/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22e894bd-ee67-4a8b-aacf-11aa5c7150d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=keyword", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//div[@id='alibris-header-red']/div[2]/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "The art of software testing"
+    }, {
+      "id": "57ce3de6-f4b5-4155-91a8-86b214294944",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchBox",
+      "targets": [
+        ["id=searchBox", "id"],
+        ["name=keyword", "name"],
+        ["css=#searchBox", "css:finder"],
+        ["xpath=//input[@id='searchBox']", "xpath:attributes"],
+        ["xpath=//div[@id='alibris-header-red']/div[2]/form/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5be472f2-bed4-4ce0-9e46-a13eb9ae424c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=The Art of Software Testing",
+      "targets": [
+        ["linkText=The Art of Software Testing", "linkText"],
+        ["css=li:nth-child(1) .work h2 a", "css:finder"],
+        ["xpath=//a[contains(text(),'The Art of Software Testing')]", "xpath:link"],
+        ["xpath=//ul[@id='works']/li/div/div/div/div[2]/h2/strong/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/The-Art-of-Software-Testing-Glenford-J-Myers/book/432659?matches=41')])[2]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"],
+        ["xpath=//a[contains(.,'The Art of Software Testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "990efb3c-2e2e-40d8-a356-2554d8d96714",
+      "comment": "",
+      "command": "click",
+      "target": "id=tabUsed",
+      "targets": [
+        ["id=tabUsed", "id"],
+        ["css=#tabUsed", "css:finder"],
+        ["xpath=//a[@id='tabUsed']", "xpath:attributes"],
+        ["xpath=//li[@id='listUsed']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#\\\\')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c7a8567-ab44-4d61-b870-4138d7ed9938",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-container:nth-child(1) .price > p",
+      "targets": [
+        ["css=.product-container:nth-child(1) .price > p", "css:finder"],
+        ["xpath=//div[@id='all-carousel']/div/div/div[2]/ul/li/table/tbody/tr/td[3]/p", "xpath:idRelative"],
+        ["xpath=//td[3]/p", "xpath:position"]
+      ],
+      "value": "$130.95 $167.00"
+    }, {
+      "id": "018806b2-8e3f-42a3-a8aa-ce6f8ead1a5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e40f8733-2cf1-4c51-b710-df01e3723147",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e82e935c-ae7f-42fa-8a29-255d9f3cb26e"]
+  }],
+  "urls": ["https://www.alibris.com/"],
+  "plugins": []
+}
