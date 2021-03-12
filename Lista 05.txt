@@ -1,7 +1,0 @@
-Boa tarde! Lista 05:
-
-Entrega em 01/03 23:59
-
-Crie um novo projeto chamado Google e dentro dele programe um script que procure por "Ovos de Páscoa" no Google. Clique em um dos links retornados e valide alguma informação na página que for aberta (assert - text)
-
-Pode realizar da forma mais simples (Selenium Puro)
